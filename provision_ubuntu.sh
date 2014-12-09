@@ -18,7 +18,9 @@ echo ". /usr/local/bin/virtualenvwrapper.sh" > ~/.bashrc
 # Python Dev Setup End
 
 # Setting up NVM
-~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+curl https://raw.githubusercontent.com/creationix/nvm/v0.20.0/install.sh | bash
+source ~/.nvm/nvm.sh
+source ~/.bashrc
 
 nvm install v0.10.33
 nvm use v0.10.33
